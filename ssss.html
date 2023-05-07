@@ -1,0 +1,10 @@
+python3 -m venv venv
+source venv/bin/activate
+
+
+pip install fastapi[all] # 
+
+uvicorn main:app --reload # запуск приложения с его перезагрузкой при изменениях
+http://127.0.0.1:8000
+http://127.0.0.1:8000/docs # готовая документация swagger
+http://127.0.0.1:8000/redoc # готовая документация
